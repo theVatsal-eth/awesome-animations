@@ -24,8 +24,8 @@ const TAGS = [
   "animation",
   "webdev",
 ];
-const DURATION = 15000;
-const ROWS = 5;
+const DURATION = 30000;
+const ROWS = 4;
 const TAGS_PER_ROW = 7;
 
 interface ScrollProps {
@@ -89,49 +89,3 @@ const PreviewLoop = () => {
 };
 
 export default PreviewLoop;
-
-// import React from "react";
-
-// const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {
-//   return (
-//     <div className="loop-slider">
-//       <div className="inner">
-//         {children}
-//         {children}
-//       </div>
-//     </div>
-//   );
-// };
-
-// const Tag = ({ text }) => (
-//   <div className="tag">
-//     <span>#</span> {text}
-//   </div>
-// );
-
-// const App = () => (
-//   <div className="app">
-//     <header>
-//       <h1>Infinite Scroll Animation</h1>
-//       <p>CSS only, content independent, bi-directional, customizable</p>
-//     </header>
-//     <div className="tag-list">
-//       {[...new Array(ROWS)].map((_, i) => (
-//         <InfiniteLoopSlider
-//           key={i}
-//           duration={random(DURATION - 5000, DURATION + 5000)}
-//           reverse={i % 2}
-//         >
-//           {shuffle(TAGS)
-//             .slice(0, TAGS_PER_ROW)
-//             .map((tag) => (
-//               <Tag text={tag} key={tag} />
-//             ))}
-//         </InfiniteLoopSlider>
-//       ))}
-//       <div className="fade" />
-//     </div>
-//   </div>
-// );
-
-// ReactDOM.render(<App />, document.body);
