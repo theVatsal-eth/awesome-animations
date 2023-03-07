@@ -14,6 +14,12 @@ const Home: NextPage = () => {
         <ul className="rounded-lg bg-blue-400 p-3 text-white">
           <Link href="/cards">Cards</Link>
         </ul>
+        <ul className="rounded-lg bg-blue-400 p-3 text-white">
+          <Link href="/tabs">Tabs</Link>
+        </ul>
+        <ul className="rounded-lg bg-blue-400 p-3 text-white">
+          <Link href="/scrolls">Scrolls</Link>
+        </ul>
       </nav>
     </>
   );

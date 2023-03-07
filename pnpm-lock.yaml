@@ -10,6 +10,7 @@ specifiers:
   autoprefixer: ^10.4.7
   eslint: ^8.30.0
   eslint-config-next: 13.1.6
+  gsap: ^3.11.4
   next: 13.1.6
   postcss: ^8.4.14
   prettier: ^2.8.1
@@ -21,6 +22,7 @@ specifiers:
   zod: ^3.20.2
 
 dependencies:
+  gsap: 3.11.4
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1430,6 +1432,10 @@ packages:
   /grapheme-splitter/1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
     dev: true
+
+  /gsap/3.11.4:
+    resolution: {integrity: sha512-McHhEguHyExMMnjqKA8G+7TvxmlKQGMbjgwAilnFe1e4id7V/tFveRQ2YMZhTYu0oxHGWvbPltdVYQOu3z1SCA==}
+    dev: false
 
   /has-bigints/1.0.2:
     resolution: {integrity: sha512-tSvCKtBr9lkF0Ex0aQiP9N+OpV4zi2r/Nee5VkRDbaqv35RLYMzbwQfFSZZH0kR+Rd6302UJZ2p/bJCEoR3VoQ==}

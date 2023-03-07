@@ -108,6 +108,7 @@
   background-size: 200% 200%;
   animation: animateGlow 1.25s linear infinite;
 }
+
 @keyframes animateGlow {
   0% {
     background-position: 0% 50%;
@@ -201,3 +202,64 @@
   z-index: 1;
 }
 /* HoverGlow Card */
+
+/* InfiteScroll */
+.fade-gr {
+  background: linear-gradient(
+    90deg,
+    rgb(55 65 81),
+    transparent 30%,
+    transparent 70%,
+    rgb(55 65 81)
+  );
+}
+
+.scroll {
+  animation-name: scroll;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: var(--direction);
+  animation-duration: var(--duration);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+/* InfiteScroll */
+
+/* Tabs */
+/* Sliding Tabs */
+.zIndex * {
+  z-index: 2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  color: rgb(37 99 235);
+}
+
+input[id="radio-1"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-2"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+input[id="radio-3"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+.glider {
+  z-index: 1;
+  transition: 0.15s ease-out;
+}
+/* Sliding Tabs */
